@@ -81,10 +81,9 @@ st.markdown("</div>", unsafe_allow_html=True)
 st.markdown('<div class="card">', unsafe_allow_html=True)
 
 st.subheader("🎥 Property Video")
-video_file = st.file_uploader("Upload video", type=["mp4"])
+video_url = "https://github.com/Vinaykumar-P/Realstate_project_April2026/blob/main/assets/video.mp4"
 
-if video_file:
-    st.video(video_file)
+st.video(video_url)
 
 st.markdown("</div>", unsafe_allow_html=True)
 
@@ -95,16 +94,13 @@ st.markdown('<div class="card">', unsafe_allow_html=True)
 
 st.subheader("🖼️ Property Gallery")
 
-images = st.file_uploader(
-    "Upload images",
-    type=["jpg", "png", "jpeg"],
-    accept_multiple_files=True
-)
+image_urls =["https://github.com/Vinaykumar-P/Realstate_project_April2026/blob/main/assets/img1.png","https://github.com/Vinaykumar-P/Realstate_project_April2026/blob/main/assets/img2.png"]
 
-if images:
-    cols = st.columns(2)
-    for i, img in enumerate(images):
-        cols[i % 2].image(img, use_container_width=True)
+
+cols = st.columns(2)
+
+for i, img_url in enumerate(image_urls):
+    cols[i % 2].image(img_url, use_container_width=True)
 
 st.markdown("</div>", unsafe_allow_html=True)
 
