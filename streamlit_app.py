@@ -126,7 +126,7 @@ st.markdown('<div class="card">', unsafe_allow_html=True)
 
 st.subheader("📞 Contact")
 
-phone_number = "919999999999"  # CHANGE THIS
+phone_number = "919561750887"  # CHANGE THIS
 message = "Hi, I am interested in your 1BHK property."
 
 st.markdown(f"""
